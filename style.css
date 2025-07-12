@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  background: #0d0d1a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(https://images.unsplash.com/photo-1687506765495-88a298ab900b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5JTIwc3RhcnN8ZW58MHx8MHx8fDA%3D);
+}
+
+.cv-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff0044;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #0ff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgb(4, 255, 255);
+  width: 300px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px dashed rgba(255, 0, 149, 0.944);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #0af;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face {
+  font-size: 30px;
+}
+
+h1 {
+  color: #0ff;
+  font-size: 25px;
+  font-weight: 500;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.role {
+  color: #ccc;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+}
+
+.skills {
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+}
+
+.skills li {
+  margin: 5px 20px;
+}
+
+.labels {
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-align: start;
+}
+
+.label {
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: start;
+}
+
+.label-value {
+  background-color: #00ffff;
+  color: #000;
+  padding: 2px 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.label-title {
+  background-color: #676662e2;
+  color: #00ffff;
+  padding: 2px 8px;
+  font-weight: bold;
+  margin-right: 5px;
+  text-align: start;
+  margin-top: 10px;
+}
+
+.call-button {
+  background: #00ffff;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  width: 300px;
+  box-shadow: 0 0 15px rgb(4, 255, 255);
+}
+
+.call-button:hover {
+  background: #0088cc;
+}
